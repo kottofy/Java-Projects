@@ -1,0 +1,41 @@
+<project name="dbproject1" default="all">
+
+	<target name="clean">
+		<delete dir="./classes"/>
+		<delete dir="./doc"/>
+	</target>
+
+	<target name="prepare">
+		<mkdir dir="classes"/>
+		<mkdir dir="doc"/>
+	</target>
+	
+	<target name="compile" depends="prepare">
+		<javac includeantruntime="false" srcdir="./src" destdir="./classes"/>
+    </target>
+    
+    <target name="jar" depends="compile">
+    	<jar destfile="dbproject1.jar">
+    		<fileset dir="./classes"/>
+    		<manifest>
+        		<attribute name="Main-Class" value="dbproject1.MovieDB"/>
+    		</manifest>
+        </jar>
+    </target>
+    
+    <target name="run" depends="jar">
+        <java jar="dbproject1.jar" fork="true">
+        	<classpath>
+        		<pathelement location="./dbproject1.jar"/>
+           	</classpath>
+        </java>
+    </target>
+    
+    <target name="javadoc" depends="prepare">
+    	<javadoc sourcepath="./src" destdir="./doc"/>
+    </target>
+
+    <target name="all" depends="run, javadoc" />
+        
+
+</project>

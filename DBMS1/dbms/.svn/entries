@@ -1,0 +1,61 @@
+10
+
+dir
+16
+svn+ssh://ottofy@odin.cs.uga.edu/home/temps/ottofy/REPO/dbms
+svn+ssh://ottofy@odin.cs.uga.edu/home/temps/ottofy/REPO/dbms
+
+
+
+2011-07-01T18:31:17.984979Z
+16
+ottofy
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+55704498-8bad-4d5f-b80f-e71073d01e1e
+
+test
+dir
+
+nbproject
+dir
+
+src
+dir
+
+manifest.mf
+file
+
+
+
+
+2011-06-30T19:40:50.000000Z
+d6fe4af2f67849f1c01635b0ed4c443d
+2011-06-30T19:48:30.449187Z
+1
+ottofy
+
+build.xml
+file
+
+
+
+
+2011-06-30T19:40:50.000000Z
+097ee55d0d050075a8767fb999ff2f1b
+2011-06-30T19:48:30.449187Z
+1
+ottofy
+
