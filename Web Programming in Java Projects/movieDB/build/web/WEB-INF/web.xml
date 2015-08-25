@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <servlet>
+        <servlet-name>MoviesController</servlet-name>
+        <servlet-class>controllers.MoviesController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>controllers.LoginController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ReviewsController</servlet-name>
+        <servlet-class>controllers.ReviewsController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>addReview</servlet-name>
+        <servlet-class>controllers.AddReviewController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddMovieController</servlet-name>
+        <servlet-class>controllers.AddMovieController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditController</servlet-name>
+        <servlet-class>controllers.EditController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MoviesController</servlet-name>
+        <url-pattern>/movies</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ReviewsController</servlet-name>
+        <url-pattern>/reviews</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>addReview</servlet-name>
+        <url-pattern>/addReview</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddMovieController</servlet-name>
+        <url-pattern>/addMovie</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditController</servlet-name>
+        <url-pattern>/edit</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    <!-- Define a security constraint on this application -->
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Entire Application</web-resource-name>
+            <url-pattern>/*</url-pattern>
+        </web-resource-collection>
+    </security-constraint>
+</web-app>

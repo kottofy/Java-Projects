@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 21, 2011 4:44:19 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="kottofy" name="movies.Genre" table="genre">
+    <id name="genreType" type="string">
+      <column length="60" name="genreType"/>
+      <generator class="assigned"/>
+    </id>
+  </class>
+</hibernate-mapping>

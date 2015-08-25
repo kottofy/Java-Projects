@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <servlet>
+        <servlet-name>MovieController</servlet-name>
+        <servlet-class>controllers.MovieController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MovieController</servlet-name>
+        <url-pattern>/movies</url-pattern>
+        <url-pattern>/reviews</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
