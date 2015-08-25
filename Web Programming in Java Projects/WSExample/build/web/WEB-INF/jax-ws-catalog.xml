@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
-    <system systemId="http://www.restfulwebservices.net/wcf/StockQuoteService.svc?wsdl" uri="wsdl/www.restfulwebservices.net/wcf/StockQuoteService.svc.wsdl"/>
-    <system systemId="http://www.restfulwebservices.net/wcf/StockQuoteService.svc?xsd=xsd0" uri="wsdl/www.restfulwebservices.net/wcf/StockQuoteService.svc.xsd_xsd0.xsd"/>
-    <system systemId="http://www.restfulwebservices.net/wcf/StockQuoteService.svc?xsd=xsd3" uri="wsdl/www.restfulwebservices.net/wcf/StockQuoteService.svc.xsd_xsd3.xsd"/>
-    <system systemId="http://www.restfulwebservices.net/wcf/StockQuoteService.svc?xsd=xsd1" uri="wsdl/www.restfulwebservices.net/wcf/StockQuoteService.svc.xsd_xsd1.xsd"/>
-    <system systemId="http://www.restfulwebservices.net/wcf/StockQuoteService.svc?xsd=xsd2" uri="wsdl/www.restfulwebservices.net/wcf/StockQuoteService.svc.xsd_xsd2.xsd"/>
-</catalog>
